@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>商城首页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/iconfont/iconfont.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/home.css" rel="stylesheet"/>
+    <style type="text/css">
+    	.searchResult {
+		
+		    position: absolute;
+		    top: 35px;
+		    right: 63px;
+		    width: 385px;
+		    border: 1px solid #e4e7ee;
+		    border-top: 0;
+		    
+		    background: #fff;
+		    max-height: 279px;
+		    overflow-y: auto;
+		    overflow-x: hidden;
+		    z-index: 2;
+		    display: none;
+		    border-radius: 10px;
+		}
+		.searchResult li {
+		
+		    /*border-bottom: 1px solid #e4e7ee;*/
+		    line-height: 30px;
+		    padding-left: 4px;
+		    width: 380px;
+		    list-style:none;
+		
+		}
+    </style>
+</head>
+<body>
+    <!--头部-->
+    <div class="topper">
+        <div class="wrapper">
+            <div class="left-bar">
+                <div class="change-city"><a class="name">衡阳</a><a class="toggle" href="city-select.html">[切换]</a></div>
+                <div class="back-home divider">
+                    <em></em><a href="index.html">商城首页</a>
+                </div>
+                <div class="item"><a href="">商家中心</a></div>
+            </div>
+            <div class="right-bar">
+                <div class="login-user sub-menu">
+                    <a class="menu-hd" href="uc.html">007小柚子<em></em></a>
+                    <div class="down">
+                        <a href="">内容</a>
+                        <a href="">内容</a>
+                        <a href="">内容</a>
+                    </div>
+                </div>
+                <div class="item"><a href="">消息（<span class="txt-theme">0</span>）</a></div>
+                <div class="logout divider"><a href="">退出</a></div>
+                <span class=""></span>
+                <div class="cart"><em></em><a href="cart-empty.html">购物车<span class="txt-theme">2</span>件</a></div>
+                <div class="order"><em></em><a href="">我的订单</a></div>
+                <div class="fav"><em></em><a href="">我的收藏</a></div>
+                <div class="help"><em></em><a href="help.html">帮助中心</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="header-wrap">
+        <div class="header wrapper">
+            <a href="" class="logo">
+                <img src="img/logo6.png" alt="" />
+            </a>
+            <div class="header-schbox">
+                <div class="inner clearfix">
+                <form action="" method="">
+                    <div class="search-switch">
+                        <i class="arrow"></i>
+                        <div class="item">商品</div>
+                        <div class="item active">店铺</div>
+                    </div>
+                    <input class="search-txt serach-box" placeholder="搜流行宝贝" onfocus="myFunction()">
+                    <button class="search-btn"></button>
+                    <div class="serach">
+                    	<ul id="searchResult" class="searchResult ">
+							<li ><a href="goods-detail.html">夏季</a></li>
+							<li ><a href="">家&nbsp电</a></li>
+							<li ><a href="">生&nbsp鲜</a></li>
+							<li ><a href="">生&nbsp鲜</a></li>
+							<li ><a href="">生&nbsp鲜</a></li>
+							<li ><a href="">生&nbsp鲜</a></li>
+						</ul>
+                    </div>
+                    <div class="suggest-box">
+                        <div class="item" data-title="上衣 短款 短袖">上衣 短款 短袖<div class="tags"><span>雪纺</span><span>蕾丝</span><span>一字领</span></div></div>
+                    </div>
+                </form>
+                </div>
+                <div class="hot-words">
+                    <a href="">太平鸟</a><a href="">手机 </a><a href="">内衣</a><a href="">周大福</a><a href="">太平鸟</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="item">
+                    <span class="ico iconfont">&#xe61b;</span>
+                    <span class="tel">400-000-0000</span>
+                </div>
+                <div class="item">
+                     <span class="ico iconfont">&#xe61d;</span><a class="kefu">在线客服</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-box">
+        <div class="nav wrapper">
+            <div class="slogan"></div>
+            <ul class="nav-ul">
+                <li><a href="">首页</a></li>
+                <li><a href="">服装城</a></li>
+                <li><a href="">美妆馆</a></li>
+                <li><a href="">新品首发</a></li>
+                <li><a href="">低价抢购</a></li>
+            </ul>
+            <!--<div class="nav-ad"><a class="ad" href=""><img src="uploads/nav-ad.jpg" alt="" /></a></div>-->
+        </div>
+    </div>
+    <!--头部-->
+
+    <div class="side-category" style="display: none;">
+        <div class="side-category-tit">全品分类</div>
+        <div class="side-category-bd">
+            <div class="f-item">
+                <!--<div class="f-box">
+                    <div class="f-tit">玩转3C</div>
+                    <div class="f-list">
+                        <a href="">手机</a><a href="">数码</a><a href="">通信</a>
+                    </div>
+                </div>-->
+                <!--<div class="c-box">
+                    <div class="hd">分类</div>
+                    <div class="bd">
+                        <div class="list-wrap">
+                            <a href="">冷却泵</a>
+                            <a href="">冷却水管道</a>
+                            <a href="">冷凝器</a>
+                            <a href="">压缩机</a>
+                            <a href="">冷冻水塔</a>
+                            <a href="">压缩机</a>
+                            <a href="">冷凝器</a>
+                            <a href="">压缩机</a>
+                            <a href="">冷冻水塔</a>
+                        </div>
+                    </div>
+                    <div class="ft">
+                        <a href=""><img class="ad" src="uploads/10.jpg" /></a>
+                    </div>
+                </div>-->
+            </div>
+            <div class="f-item">
+                <div class="f-box">
+                    <div class="f-tit"><a href="index.html">精品服饰</a></div>
+                    <div class="f-list">
+                        <a href="index.html" >夏季新款</a><a href="index.html">正品服装</a>
+                    </div>
+                </div>
+                <!--<div class="c-box">
+                </div>-->
+            </div>
+            <div class="f-item">
+                <!--<div class="f-box">
+                    <div class="f-tit">商城超市</div>
+                    <div class="f-list">
+                        <a href="">服饰内衣</a><a href="">鞋靴箱包</a>
+                    </div>
+                </div>-->
+                <!--<div class="c-box">
+                </div>-->
+            </div>
+            <div class="f-item">
+                <div class="f-box">
+                    <a  class="f-tit" href="index-dq.html">品牌家电</a>
+                    <div class="f-list">
+                        <a href="index-dq.html">正品家电</a><a href="index-dq.html">假一赔十</a>
+                    </div>
+                </div>
+                <!--<div class="c-box">
+                </div>-->
+            </div>
+            <div class="f-item">
+                <div class="f-box">
+                    <a class="f-tit" href="index-sxtc.html">生鲜专区</a>
+                    <div class="f-list">
+                        <a href="index-sxtc.html">食品</a><a href="">生鲜</a><a href="index-sxtc.html">特产</a><a href="">水果</a>
+                    </div>
+                </div>
+                <!--<div class="c-box">
+                </div>-->
+            </div>
+        </div>
+        <div class="side-category-ft" data-action="category-toggle">
+            <span class="label tohide">收起导航</span>
+            <span class="label toshow">展开导航</span>
+        </div>
+    </div>
+
+    <div class="home-full-banner">
+        <a href="" class="item"><img data-lazy="uploads/banner1.jpg" alt="" /></a>
+        <a href="" class="item"><img data-lazy="uploads/banner6.jpg" alt="" /></a>
+        <a href="" class="item"><img data-lazy="uploads/banner5.jpg" alt="" /></a>
+    </div>
+
+    <div class="gray-box">
+        <div class="wrapper">
+            <!-- 商品促销 -->
+            <!--<div class="promo-list clearfix">
+                <div class="col">
+                    <a class="item" href="goods-detail.html"><img src="uploads/13.jpg" alt="" /></a>
+                </div>
+                <div class="col">
+                    <a class="item" href="goods-detail.html"><img src="uploads/14.jpg" alt="" /></a>
+                </div>
+                <div class="col">
+                    <a class="item" href="index-dq.html"><img src="uploads/15.jpg" alt="" /></a>
+                </div>
+                <div class="col">
+                    <a class="item" href="goods-detail.html"><img src="uploads/16.jpg" alt="" /></a>
+                </div>
+            </div>-->
+
+            <!-- 限时抢购 -->
+            <div class="flash-sale-section">
+                <div class="section-hd">
+                    <div class="title">限时抢购</div>
+                </div>
+                <div class="flash-sale clearfix">
+                    <div class="grid grid-b">
+                        <a href="goods-detail.html"><img src="uploads/a5-2.jpg" alt="" /></a>
+                    </div>
+                    <div class="grid grid-m">
+                        <a href="goods-detail.html">
+                            <div class="inner-text">
+                                <div class="tit">上衣T恤</div>
+                                <div class="stit">年份季节: 2020年夏季新款</div>
+                                <div class="info">显瘦超值</div>
+                            </div>
+                            <img src="uploads/a1-1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="grid grid-s">
+                        <a href="goods-detail.html">
+                            <div class="inner-text">
+                                <div class="tit">大码学生上衣</div>
+                                <div class="stit">纯棉2020新款韩版</div>
+                            </div>
+                            <img src="uploads/a2-1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="grid grid-s">
+                        <a href="goods-detail.html">
+                            <div class="inner-text">
+                                <div class="tit">【官方】ripndip正品</div>
+                                <div class="stit">男女情侣款大码打底</div>
+                            </div>
+                            <img src="uploads/a3-1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="grid grid-s">
+                        <a href="goods-detail.html">
+                            <div class="inner-text">
+                                <div class="tit">VORFREUDE紫色艺术字母</div>
+                                <div class="stit">夏季潮牌T恤宽松</div>
+                            </div>
+                            <img src="uploads/a4-1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="grid grid-s">
+                        <a href="goods-detail.html">
+                            <div class="inner-text">
+                                <div class="tit">打底衫半袖</div>
+                                <div class="stit">男士短袖t恤2020夏季新款</div>
+                            </div>
+                            <img src="uploads/a5-3.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="grid grid-s">
+                        <a href="goods-detail.html">
+                            <div class="inner-text">
+                                <div class="tit">HIPANDA 你好熊猫</div>
+                                <div class="stit">印花T恤</div>
+                            </div>
+                            <img src="uploads/a6-1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="grid grid-s">
+                        <a href="goods-detail.html">
+                            <div class="inner-text">
+                                <div class="tit">法式小众桔梗裙 </div>
+                                <div class="stit">碎花裙</div>
+                            </div>
+                            <img src="uploads/a7-1.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <div class="gray-box">
+        <div class="wrapper floor-wrap">
+            <!-- floor1到floor5控制楼层的主题 -->
+            <div class="floor-section floor1">
+                <div class="section-hd">
+                    <div class="title">品牌专区</div>
+                    <div class="bar more">
+</a><a href="">魅族</a><a href="">李宁</a><a href="">安踏</a><a href="">耐克</a><a href="">阿迪达斯</a><a href="">RAND</a><a href="">匡威</a>
+                    </div>
+                </div>
+                <div class="section-bd clearfix">
+                    <div class="section-side">
+                        <div class="banner">
+                            <a href="search-goods.html"><img src="uploads/a3-5.jpg " alt="" /></a>
+                        </div>
+                        <div class="brands">
+                            <a href="search-goods.html" class="item"><div class="inner"><img src="uploads/nn.jpg" alt="" /></div></a>
+                            <!--<a href="search-goods.html" class="item"><div class="inner"><img src="uploads/12.jpg" alt="" /></div></a>-->
+                            <!--<a href="search-goods.html" class="item"><div class="inner"><img src="uploads/24.jpg" alt="" /></div></a>-->
+                            <a href="search-goods.html" class="item"><div class="inner"><img src="uploads/oo.jpg" alt="" /></div></a>
+                            <a href="search-goods.html" class="item"><div class="inner"><img src="uploads/26.jpg" alt="" /></div></a>
+                            <a href="search-goods.html" class="item"><div class="inner"><img src="uploads/pp.jpg" alt="" /></div></a>
+                        </div>
+                    </div>
+                    <div class="section-cont">
+                        <div class="col">
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">女装半身裙</div>
+                                    <div class="info">新款小雏菊印花裙子百搭</div>
+                                </div>
+                                <img src="uploads/a8-1.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">裤子男韩版潮流</div>
+                                    <div class="info">纯色直筒长裤 </div>
+                                </div>
+                                <img src="uploads/a9-1.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">情侣款大码</div>
+                                    <div class="info">正品上衣</div>
+                                </div>
+                                <img src="uploads/a3-3.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="grid grid-b" href="">
+                                <div class="inner-text">
+                                    <div class="tit">Rugged Gent'</div>
+                                    <div class="info">外套薄款猎装 </div>
+                                </div>
+                                <img src="uploads/a12-1.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-m" href="">
+                                <div class="inner-text">
+                                    <div class="tit">2020夏季新品短款</div>
+                                    <div class="info">宽松潮流直筒短裤 </div>
+                                </div>
+                                <img src="uploads/aa.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">胖胖哥短袖t恤男</div>
+                                    <div class="info">潮牌情侣上衣 </div>
+                                </div>
+                                <img src="uploads/cc.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">紫色艺术字母</div>
+                                    <div class="info">T恤宽松  </div>
+                                </div>
+                                <img src="uploads/a4-2.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">JackJones杰克琼斯</div>
+                                    <div class="info">修身小脚牛仔裤</div>
+                                </div>
+                                <img src="uploads/dd.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floor-section floor4">
+                <div class="section-hd">
+                    <div class="title">潮流新款</div>
+                    <div class="bar more">
+                        <a href="">情侣装</a><a href="">国朝</a><a href="">潮牌</a><a href="">连衣裙</a><a href="">男短袖</a><a href="">百搭男裤</a>
+                    </div>
+                </div>
+                <div class="section-bd clearfix">
+                    <div class="section-side">
+                        <div class="banner">
+                            <a href=""><img src="uploads/ee.jpg" alt="" /></a>
+                        </div>
+                        <div class="category">
+                           <div class="tit">超市</div>
+                            <div class="row">
+                                <div class="col col-6"><a href="" class="item">情侣装</a></div>
+                                <div class="col col-6"><a href="" class="item">国朝</a></div>
+                                <div class="col col-6"><a href="" class="item">潮牌</a></div>
+                                <div class="col col-6"><a href="" class="item">连衣裙</a></div>
+                                <div class="col col-6"><a href="" class="item">男短袖</a></div>
+                                <div class="col col-6"><a href="" class="item">百搭男裤</a></div>
+                                <div class="col col-6"><a href="" class="item">八分裤</a></div>
+                                <div class="col col-6"><a href="" class="item">男T恤</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-cont">
+                        <div class="col">
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">情侣男士纯棉爆款</div>
+                                    <div class="info">印花时尚短袖T恤</div>
+                                </div>
+                                <img src="uploads/ff.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">回力男鞋</div>
+                                    <div class="info">2020韩版潮流</div>
+                                </div>
+                                <img src="uploads/gg.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">2020夏季新品</div>
+                                    <div class="info">猫咪印花打底衫</div>
+                                </div>
+                                <img src="uploads/hh.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="grid grid-b" href="">
+                                <div class="inner-text">
+                                    <div class="tit">衬衫定制绣logo</div>
+                                    <div class="info">银行面试4S店工作服</div>
+                                </div>
+                                <img src="uploads/ii.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-m" href="">
+                                <div class="inner-text">
+                                    <div class="tit">100%棉男士短裤</div>
+                                    <div class="info">休闲纯色五分裤</div>
+                                </div>
+                                <img src="uploads/jj.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">直筒工装裤男</div>
+                                    <div class="info">学生港风日系裤子</div>
+                                </div>
+                                <img src="uploads/kk.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">英爵伦E 2020新款</div>
+                                    <div class="info">百搭潮流男装裤</div>
+                                </div>
+                                <img src="uploads/ll.jpg" alt="" />
+                            </a>
+                            <a class="grid grid-s" href="goods-detail.html">
+                                <div class="inner-text">
+                                    <div class="tit">Equality日系复古</div>
+                                    <div class="info">休闲裤阔腿长裤</div>
+                                </div>
+                                <img src="uploads/mm.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+     <!--脚部-->
+    <div class="fatfooter">
+        <div class="wrapper">
+            <div class="fatft-service">
+                <div class="item">
+                    <a href="">
+                        <img src="img/ico/ft-ser1.png" alt="" class="ico" />
+                        <span>品质保障</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/ico/ft-ser2.png" alt="" class="ico" />
+                        <span>七天无理由退换货</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/ico/ft-ser3.png" alt="" class="ico" />
+                        <span>特色服务体验</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/ico/ft-ser4.png" alt="" class="ico" />
+                        <span>帮助中心</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="fatft-links">
+            <div class="wrapper">
+                <div class="col-link">
+                    <div class="tit">购物指南</div>
+                    <div class="link"><a href="">购物流程</a></div>
+                    <div class="link"><a href="">账户安全</a></div>
+                    <div class="link"><a href="">联系客服</a></div>
+                    <div class="link"><a href="">会员介绍</a></div>
+                </div>
+                <div class="col-link">
+                    <div class="tit">配送方式</div>
+                    <div class="link"><a href="">配送服务查询上</a></div>
+                    <div class="link"><a href="">门自提</a></div>
+                    <div class="link"><a href="">物流费用标准</a></div>
+                </div>
+                <div class="col-link">
+                    <div class="tit">支付方式</div>
+                    <div class="link"><a href="">银联支付</a></div>
+                    <div class="link"><a href="">支付宝支付</a></div>
+                    <div class="link"><a href="">微信支付</a></div>
+                </div>
+                <div class="col-link">
+                    <div class="tit">售后服务</div>
+                    <div class="link"><a href="">售后政策</a></div>
+                    <div class="link"><a href="">价格保护</a></div>
+                    <div class="link"><a href="">退单说明</a></div>
+                    <div class="link"><a href="">取消订单</a></div>
+                </div>
+                <div class="col-link">
+                    <div class="tit">联系我们</div>
+                    <div class="link"><a href="">商家入驻</a></div>
+                    <div class="link"><a href="">营销服务</a></div>
+                    <div class="link"><a href="">关于我们</a></div>
+                    <div class="link"><a href="">广告服务</a></div>
+                </div>
+                <div class="col-contact">
+                    <div class="phone">400-889-8188</div>
+                    <div class="time">周一至周日 8:00-18:00 <br />（仅收市话费）</div>
+                    <div class="tool">
+                        <a href="" class="kefu"><i class="iconfont icon-huifu"></i>在线客服</a>
+                        <a class="ico weixin" href=""><img src="img/ico/ft-weixin.png" alt="" /><img src="uploads/ercode.jpg" class="ercode" /></a>
+                        <a class="ico sina" href=""><img src="img/ico/ft-sina.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">安徽XXX网络科技有限公司 版权所有 Copyright © 2016-2018   备案号：皖ICP备123456789<a href="http://www.bootstrapmb.com/">&#24320;&#21019;&#32773;&#32032;&#26448;</a></div>
+    <!--脚部-->
+</body>
+<script src="js/jquery.js"></script>
+<link rel="stylesheet" href="js/slick/slick.css"/>
+<script src="js/slick/slick.min.js"></script>
+<script src="js/global.js"></script>
+<script>
+    $('.home-full-banner').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: true,
+        fade: true
+      });
+
+    +function () {
+        var bigH=$('.side-category').height();
+        $(window).on('scroll resize load',function () {
+            var sTop=$(this).scrollTop(),
+            valve=$('.home-full-banner').offset().top+$('.home-full-banner').height(),
+            wH=$(this).height();
+
+            
+            if (sTop>valve) {
+                $('.side-category').show();
+            }
+            else {
+                $('.side-category').hide();
+            }
+        })
+    }();
+     zAction.add({
+        'category-toggle':function () {
+            if ($(this).hasClass('on')) {
+                $(this).removeClass('on').prev().slideDown(200);
+            }
+            else {
+                $(this).addClass('on').prev().slideUp(200);
+            }
+        },
+
+    });
+    
+    function myFunction(){
+    	document.getElementById("searchResult").style.display = "block";
+    }
+
+</script>
+</html>
